@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;800&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --xtdark-des-blue: hsl(229, 23%, 23%);
+    --dark-gray-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-position-x: right 52vw, left 48vw; 
+    background-position-y: bottom 35vh, top 52vh;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1 {
+    color: var(--xtdark-des-blue);
+    font-size: 1.15rem;
+    margin: ;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 1rem;
+    width: 100%;
+    max-height: 23.5rem;
+}
+
+.card-background {
+    border-radius: 15px 15px 0 0;
+}
+
+figure {
+    position: relative;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    top: -3.5rem;
+    left: 35%;
+    position: absolute;
+    border: 5px solid white;
+}
+
+figcaption {
+    text-align: center;
+    position: relative;
+    padding: 4rem 0 2rem 0;
+    color: var(--dark-gray);
+}
+
+.age {
+    padding-left: .45rem;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.location {
+    font-size: 15px;
+    padding-top: .5rem;
+}
+
+.stats {
+    border-top: 1px solid #dcdcdc;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.description:hover {
+    color: var(--dark-cyan);
+    font-weight: bold;
+}
+
+.stats-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+}
+
+.description {
+    font-size: .625rem;
+    letter-spacing: .1rem;
+    color: var(--dark-gray);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 1rem;
+    color: #dcdcdc;
+}
+.attribution a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.attribution a:hover {
+    color: var(--xtdark-des-blue);
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: top -100rem left -4rem, bottom -33rem right 0rem;
+    }
+}
