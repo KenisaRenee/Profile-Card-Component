@@ -120,11 +120,3 @@ ul {
 .attribution a:hover {
     color: var(--xtdark-des-blue);
 }
-
-@media screen and (max-width: 400px) {
-    body {
-        background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
-        background-repeat: no-repeat, no-repeat;
-        background-position: top -100rem left -4rem, bottom -33rem right 0rem;
-    }
-}
