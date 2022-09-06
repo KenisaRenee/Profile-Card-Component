@@ -40,7 +40,6 @@ h1 {
     background-color: var(--white);
     border-radius: 1rem;
     width: 100%;
-    max-height: 23.5rem;
 }
 
 .card-background {
@@ -119,4 +118,12 @@ ul {
 
 .attribution a:hover {
     color: var(--xtdark-des-blue);
+}
+
+@media (max-width: 350px) {
+    .stats-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
 }
